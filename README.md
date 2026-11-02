@@ -1,4 +1,4 @@
-Azure KQL Security Detection
+# Azure KQL Security Detection
 
 SOC Analyst Cybersecurity Portfolio Project
 
@@ -9,27 +9,27 @@ Project Type: Security Monitoring and Threat Detection
 
 ⸻
 
-Project Overview
+## Project Overview
 
 This project demonstrates how Kusto Query Language (KQL) can be used to analyze simulated authentication activity, identify excessive failed login attempts, classify security alert severity, and organize investigation results.
 
 The project models common Security Operations Center (SOC) responsibilities, including security monitoring, alert triage, threat detection, and incident investigation.
 
-Tools and Technologies
+## Tools and Technologies
 
 * Microsoft Azure Data Explorer — Executing and testing KQL queries
 * Kusto Query Language (KQL) — Analyzing and filtering security data
 * GitHub — Storing and documenting the project
 * Simulated Authentication Data — Testing failed-login detection rules
 
-Detection Rules
+## Detection Rules
 
 Failed Login Attempts	Severity
 10 or more	High
 5–9	Medium
 Fewer than 5	Low
 
-Investigation Results
+## Investigation Results
 
 The KQL query identified two simulated alerts requiring investigation:
 
@@ -51,12 +51,12 @@ Alert 2 — Medium Severity
 
 The query filters out Low-severity records and sorts the remaining alerts chronologically.
 
-Project Files
+## Project Files
 
 * View KQL Failed Login Detection Query
 * View SOC Security Alert Investigation Report
 
-Skills Demonstrated
+## Skills Demonstrated
 
 * KQL Query Development
 * Security Event Analysis
@@ -67,7 +67,7 @@ Skills Demonstrated
 * Security Documentation
 * Incident Response Recommendations
 
-Recommended Security Response
+## Recommended Security Response
 
 1. Investigate accounts with repeated failed login attempts.
 2. Review additional authentication logs for suspicious activity.
@@ -76,15 +76,7 @@ Recommended Security Response
 5. Apply appropriate account protection measures.
 6. Escalate confirmed threats according to incident response procedures.
 
-Project Limitations
+## Project Limitations
 
 This project uses simulated authentication data and reserved documentation IP addresses. It is a training exercise, not a live production security monitoring system or evidence of a confirmed attack.
 
-About the Analyst
-
-David Jeffries
-Google Cybersecurity Professional Certificate — Completed
-
-GitHub: https://github.com/David31005
-
-LinkedIn: https://www.linkedin.com/in/david-jeffries001
