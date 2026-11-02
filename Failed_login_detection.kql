@@ -1,0 +1,19 @@
+datatable(User:string, SourceIP:string, FailedLogins:int)
+[
+    "admin", "203.0.113.45", 8
+    "jsmith", "192.0.2.10", 2
+   "guest", 198.51.100.25", 12
+]
+| extend Severity = case(
+    FailedLogins >= 10, "High"
+    FailedLogins >= 5, "Medium",
+    "Low:
+)
+| where Severity in ("High", "Medium")
+| extend EventTime = case(
+    User == "admin",
+    todatetime("2026-11-02T09:05:00),
+    todatetime("2026-11-02T09:10:00")
+)
+| project User, SourceIP, FailedLogins, Severity, EventTime
+| sort by EventTime asc
