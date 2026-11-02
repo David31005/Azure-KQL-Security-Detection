@@ -6,7 +6,7 @@ Date: November 2, 2026
 Environment: Azure Data Explorer (KQL)
 Investigation Type: Simulated Failed Login Detection
 
-*1. Executive Summary*
+##*1. Executive Summary*
 
 This project demonstrates how a Security Operations Center (SOC) analyst can use Kusto Query Language (KQL) to identify suspicious authentication activity, classify alert severity, and prioritize potential security incidents.
 
