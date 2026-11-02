@@ -7,7 +7,7 @@ datatable(User:string, SourceIP:string, FailedLogins:int)
 | extend Severity = case(
     FailedLogins >= 10, "High"
     FailedLogins >= 5, "Medium",
-    "Low:
+    "Low".
 )
 | where Severity in ("High", "Medium")
 | extend EventTime = case(
